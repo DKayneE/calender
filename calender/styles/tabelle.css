@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+   -moz-border-radius: 5px
+    }
+
+th, td {
+    padding: 8px;
+    text-align: center;
+
+    }
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+th {
+    background-color: #444;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+
+    }
+
+tr:nth-child(even) {
+    background-color: #555;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    }
+        .expired-month {
+            opacity: 0.5;
+            }
+
+
+td:hover {
+    color: #ff5945;
+    cursor: pointer;
+    }

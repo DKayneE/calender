@@ -1,0 +1,44 @@
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase; /* Die Überschrift in Großbuchstaben umwandeln */
+    letter-spacing: 3px; /* Stelle den gewünschten Abstand zwischen den Buchstaben ein */
+}
+
+
+.arrow {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.arrow.left {
+    left: 140px;
+    background-image: url('img/left.png');
+}
+
+.arrow.right {
+    right: 140px;
+    background-image: url('img/right.png');
+}
+
+.arrow:hover::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 50%;
+}
